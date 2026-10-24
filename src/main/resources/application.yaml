@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: product-service
+
+  datasource:
+    url: jdbc:h2:file:./data/product-servicedb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  h2:
+    console:
+      enabled: true
